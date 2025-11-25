@@ -45,16 +45,6 @@ A complete, production-ready application featuring:
 
 ### Local Development
 
-**Windows (Automated):**
-```bash
-# Setup everything
-setup-all.bat
-
-# Start both servers
-start-all.bat
-
-# Open http://localhost:3000
-```
 
 **All Platforms (Manual):**
 ```bash
@@ -70,26 +60,6 @@ npm run dev
 
 # Open http://localhost:3000
 ```
-
-### Deploy to Vercel
-
-**1. Deploy Backend:**
-- Go to [vercel.com/new](https://vercel.com/new)
-- Import this repository
-- Set **Root Directory**: `backend`
-- Deploy and copy the URL
-
-**2. Deploy Frontend:**
-- Go to [vercel.com/new](https://vercel.com/new) again
-- Import the same repository
-- Set **Root Directory**: `./`
-- Add environment variable:
-  - Name: `VITE_API_URL`
-  - Value: `https://your-backend-url.vercel.app`
-- Deploy
-
-**Your app is now live!** 🎉
-
 ---
 
 ## ✨ Features

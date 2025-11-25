@@ -26,10 +26,13 @@ function App() {
     try {
       // Call backend API
       // Use environment variable or detect production
-      const API_URL = import.meta.env.VITE_API_URL || 
-                      (window.location.hostname === 'localhost' 
-                        ? 'http://localhost:3001' 
-                        : 'https://vrpagent-visualizer.vercel.app')
+      let API_URL = import.meta.env.VITE_API_URL || 
+                    (window.location.hostname === 'localhost' 
+                      ? 'http://localhost:3001' 
+                      : 'https://vrpagent-visualizer.vercel.app')
+      
+      // Remove trailing slash to prevent double slash
+      API_URL = API_URL.replace(/\/$/, '')
       
       console.log('Using API URL:', API_URL) // Debug log
       

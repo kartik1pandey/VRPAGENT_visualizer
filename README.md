@@ -99,14 +99,7 @@ vrp-agent-visualizer/
 │       ├── cvrp/                # Capacitated VRP
 │       ├── pcvrp/               # Prize-Collecting VRP
 │       └── vrptw/               # VRP with Time Windows
-│
-└── 📚 Documentation
-    ├── START_HERE.md            # Navigation guide
-    ├── COMPLETE_SETUP_GUIDE.md  # Full setup instructions
-    ├── QUICKSTART.md            # Quick start guide
-    ├── PROJECT_SUMMARY.md       # Project overview
-    ├── IMPLEMENTATION_GUIDE.md  # C++ integration guide
-    └── VISUAL_GUIDE.md          # Design system
+
 ```
 
 ---
@@ -211,21 +204,6 @@ curl -X POST http://localhost:3001/api/solve \
 
 ---
 
-## 📚 Documentation
-
-| Document | Description |
-|----------|-------------|
-| [START_HERE.md](START_HERE.md) | Navigation guide to all documentation |
-| [COMPLETE_SETUP_GUIDE.md](COMPLETE_SETUP_GUIDE.md) | Full setup instructions with troubleshooting |
-| [QUICKSTART.md](QUICKSTART.md) | Get running in 5 minutes |
-| [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) | Comprehensive project overview |
-| [IMPLEMENTATION_GUIDE.md](IMPLEMENTATION_GUIDE.md) | Advanced C++ integration options |
-| [VISUAL_GUIDE.md](VISUAL_GUIDE.md) | UI design system and customization |
-| [FRONTEND_README.md](FRONTEND_README.md) | Frontend technical documentation |
-| [backend/README.md](backend/README.md) | Backend API documentation |
-
----
-
 ## 🎓 Research
 
 This project implements the algorithms from:
@@ -237,37 +215,6 @@ The repository contains:
 - Generated heuristics from evolutionary algorithm
 - Sample initial populations
 - Optimized solutions with performance scores
-
----
-
-## 🚀 Deployment
-
-### Quick Deploy to Vercel (10 minutes)
-
-**Frontend + Backend deployment ready!**
-
-```bash
-# 1. Push to GitHub
-git init && git add . && git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/vrp-agent.git
-git push -u origin main
-
-# 2. Deploy to Vercel
-# Follow: QUICK_DEPLOY.md
-```
-
-**Deployment Guides:**
-- ⚡ **Quick Start**: [QUICK_DEPLOY.md](QUICK_DEPLOY.md) - 10 minutes
-- 📖 **Complete Guide**: [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) - Detailed instructions
-- ✅ **Checklist**: [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) - Step-by-step
-- 📊 **Summary**: [DEPLOYMENT_SUMMARY.md](DEPLOYMENT_SUMMARY.md) - Overview
-
-**What you get:**
-- ✅ Public URL for your app
-- ✅ Automatic HTTPS
-- ✅ Global CDN
-- ✅ Serverless backend
-- ✅ Free hosting (Vercel free tier)
 
 ---
 
@@ -296,14 +243,6 @@ This project is provided for research and educational purposes.
 
 ---
 
-## 📞 Support
-
-- **Documentation**: See [START_HERE.md](START_HERE.md)
-- **Setup Issues**: Check [COMPLETE_SETUP_GUIDE.md](COMPLETE_SETUP_GUIDE.md)
-- **API Questions**: See [backend/README.md](backend/README.md)
-
----
-
 ## 🎯 Current Status
 
 ✅ **Completed**
@@ -318,12 +257,6 @@ This project is provided for research and educational purposes.
 - Algorithm comparison mode
 - Export results to CSV/JSON
 - Historical performance tracking
-
----
-
-**Ready to explore AI-generated VRP heuristics?**
-
-👉 **Start here:** [COMPLETE_SETUP_GUIDE.md](COMPLETE_SETUP_GUIDE.md)
 
 ---
 

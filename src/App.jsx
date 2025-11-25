@@ -25,7 +25,14 @@ function App() {
     
     try {
       // Call backend API
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+      // Use environment variable or detect production
+      const API_URL = import.meta.env.VITE_API_URL || 
+                      (window.location.hostname === 'localhost' 
+                        ? 'http://localhost:3001' 
+                        : 'https://vrpagent-visualizer.vercel.app')
+      
+      console.log('Using API URL:', API_URL) // Debug log
+      
       const response = await fetch(`${API_URL}/api/solve`, {
         method: 'POST',
         headers: {

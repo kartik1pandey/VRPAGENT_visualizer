@@ -120,7 +120,6 @@ function App() {
       <header className="app-header">
         <h1>🚚 VRPAgent Visualizer</h1>
         <p>Interactive visualization of AI-generated Vehicle Routing Problem heuristics</p>
-        <div className="badge">✨ Powered by AI-Generated Algorithms</div>
       </header>
 
       <div className="app-content">

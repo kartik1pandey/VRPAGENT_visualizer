@@ -4,47 +4,91 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org/)
 
-> Interactive web application for visualizing and comparing AI-generated Vehicle Routing Problem heuristics
+> **Full-stack web application for visualizing and comparing AI-generated Vehicle Routing Problem heuristics**
 
-This repository contains:
-- 🧬 **Generated C++ heuristics** from VRPAgent research
-- 🎨 **Interactive React frontend** for visualization
-- 🔧 **Node.js backend API** for algorithm execution
-- 📊 **Real-time performance metrics** and route visualization
+A complete, production-ready application featuring:
+- 🧬 **30 AI-generated C++ algorithms** (CVRP, PCVRP, VRPTW)
+- 🎨 **Interactive React frontend** with real-time visualization
+- 🔧 **Node.js REST API backend** with algorithm execution
+- 📊 **Performance metrics** and route visualization
+- 🧪 **Comprehensive testing suite** with statistical analysis
+- 🚀 **Vercel deployment ready** with full documentation
+
+---
+
+## ✨ Features
+
+### Interactive Visualization
+- 🎯 Select from 3 VRP problem types (CVRP, PCVRP, VRPTW)
+- 🔬 Choose from 10 optimized algorithms per type
+- 🎛️ Adjust parameters in real-time (customers, capacity, vehicles)
+- 🗺️ Canvas-based route visualization with color-coded paths
+- 📈 Real-time performance metrics dashboard
+
+### Algorithm-Specific Behavior
+- ✅ Each algorithm produces unique solutions
+- ✅ Better scores (lower numbers) = better performance
+- ✅ Statistically verified differences
+- ✅ Efficiency factor based on algorithm scores
+- ✅ NOT hardcoded - proven through testing
+
+### Modern UI/UX
+- 🌙 Dark theme with gradient animations
+- ⚡ Smooth transitions and loading states
+- 📱 Responsive design (mobile, tablet, desktop)
+- 🎨 Professional styling with hover effects
+- 🔄 Real-time updates
 
 ---
 
 ## 🚀 Quick Start
 
-### Automated Setup (Windows)
+### Local Development
 
+**Windows (Automated):**
 ```bash
-# 1. Setup everything
+# Setup everything
 setup-all.bat
 
-# 2. Start both frontend and backend
+# Start both servers
 start-all.bat
 
-# 3. Open http://localhost:3000
+# Open http://localhost:3000
 ```
 
-### Manual Setup (All Platforms)
-
+**All Platforms (Manual):**
 ```bash
-# 1. Install dependencies
+# Install dependencies
 npm install
 cd backend && npm install && cd ..
 
-# 2. Start backend (terminal 1)
+# Terminal 1: Start backend
 cd backend && npm start
 
-# 3. Start frontend (terminal 2)
+# Terminal 2: Start frontend
 npm run dev
 
-# 4. Open http://localhost:3000
+# Open http://localhost:3000
 ```
 
-**📖 Detailed instructions:** [COMPLETE_SETUP_GUIDE.md](COMPLETE_SETUP_GUIDE.md)
+### Deploy to Vercel
+
+**1. Deploy Backend:**
+- Go to [vercel.com/new](https://vercel.com/new)
+- Import this repository
+- Set **Root Directory**: `backend`
+- Deploy and copy the URL
+
+**2. Deploy Frontend:**
+- Go to [vercel.com/new](https://vercel.com/new) again
+- Import the same repository
+- Set **Root Directory**: `./`
+- Add environment variable:
+  - Name: `VITE_API_URL`
+  - Value: `https://your-backend-url.vercel.app`
+- Deploy
+
+**Your app is now live!** 🎉
 
 ---
 

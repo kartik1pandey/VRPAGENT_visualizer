@@ -1,0 +1,96 @@
+.algorithm-selector {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.algorithm-selector h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #f1f5f9;
+}
+
+.vrp-type-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.vrp-type-btn {
+  padding: 12px 16px;
+  background: #334155;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.vrp-type-btn:hover {
+  background: #475569;
+  border-color: #667eea;
+}
+
+.vrp-type-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+}
+
+.vrp-type-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 4px;
+}
+
+.vrp-type-desc {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.algorithm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.algorithm-item {
+  padding: 14px;
+  background: #334155;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.algorithm-item:hover {
+  background: #475569;
+  border-color: #667eea;
+  transform: translateX(4px);
+}
+
+.algorithm-item.selected {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+}
+
+.algo-name {
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 4px;
+}
+
+.algo-score {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.algo-badge {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #fbbf24;
+}

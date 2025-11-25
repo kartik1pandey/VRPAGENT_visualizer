@@ -1,0 +1,40 @@
+.vrp-visualizer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.vrp-visualizer h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #f1f5f9;
+}
+
+.empty-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  text-align: center;
+  padding: 40px;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+}
+
+.visualization-canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #0f172a;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
